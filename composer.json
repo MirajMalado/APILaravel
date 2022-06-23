@@ -1,0 +1,8 @@
+{
+    "require": {
+        "laravel-json-api/laravel": "^2.3"
+    },
+    "require-dev": {
+        "laravel-json-api/testing": "^1.1"
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "name": "laravel-json-api/encoder-neomerx",
+    "description": "Encode JSON:API resources using the neomerx/json-api package.",
+    "keywords": [
+        "jsonapi.org",
+        "json-api",
+        "jsonapi",
+        "laravel"
+    ],
+    "homepage": "https://github.com/laravel-json-api/encoder-neomerx",
+    "support": {
+        "issues": "https://github.com/laravel-json-api/encoder-neomerx/issues"
+    },
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Cloud Creativity Ltd",
+            "email": "info@cloudcreativity.co.uk"
+        },
+        {
+            "name": "Christopher Gammie",
+            "email": "contact@gammie.co.uk"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "ext-json": "*",
+        "illuminate/contracts": "^8.0|^9.0",
+        "illuminate/support": "^8.0|^9.0",
+        "laravel-json-api/core": "^2.0",
+        "laravel-json-api/neomerx-json-api": "^5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelJsonApi\\Encoder\\Neomerx\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LaravelJsonApi\\Encoder\\Neomerx\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "2.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "LaravelJsonApi\\Encoder\\Neomerx\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    }
+}
